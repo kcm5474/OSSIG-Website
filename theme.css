@@ -1,0 +1,74 @@
+/* The following theme.css file is intended to be copied and pasted as raw text, and placed within the "custom styles" section of a plone website for theming pourposes. This theme is very basic and simply changes all of the colors to be Penn State related colors. Please note that Penn State's color themes are protected under applicable trademarks, and the colors used within this theme are intended only for Penn State websites. Feel free to use this code to theme your website with your own colors however. */
+$primary:#1e407c;
+$secondary: #1E407C;
+$tertiary: #005FA9;
+$footer-bg: #001C42;
+
+/* #portal-footer-wrapper {
+    background-color: #1e407c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+  } */
+
+body .footer-wrapper #portal-footer-wrapper {
+    background-color: #001C42 !important;
+}
+
+
+:root {
+    /* --bs-secondary-bg: #001e44; /* Define the variable with a color value */
+    --bs-link-color-rgb: #cce9ff;
+    --bs-dark: #001e44;
+    --bs-primary: #1e407c;
+    --bs-link-hover-color-rgb: #cce9ff;
+    --plone-toolbar-link-color: #18417B;
+    footer-bg: #001C42;
+    /* --plone-portlet-list-hover-bg: #1e407c; */
+    /* --plone-portlet-footer-bg: #1e407c; */
+    #portal-footer-wrapper {
+    background-color: #001C42 !important;
+}
+}
+
+#portal-breadcrumbs {
+    background-color: var(--bs-secondary-bg);
+    margin-bottom: 2rem;
+  }
+
+.breadcrumb-item.active {
+    color: #cce9ff !important;
+}
+
+#this-cass-is-false {
+$primary: #005FA9; /*#1e407c*/
+$secondary: #1E407C;
+$tertiary: #1E407C; /*#005FA9*/
+}
+
+.breadcrumb-item {
+    color: #cce9ff;
+}
+
+.breadcrumb-item:hover {
+    color: #cce9ff;
+}
+
+
+
+/* new stuff for 10.25 below here */
+#portal-globalnav-wrapper {
+    color: #18417B;
+}
+
+.nav-link.dropdown-item {
+   color: #18417B;
+}
+
+#portal-breadcrumbs {
+    --bs-secondary-bg: #001e44;
+}
+
+/* #content-header {
+    background-color: #1e407c !important;
+} */
