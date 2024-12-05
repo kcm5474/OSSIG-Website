@@ -20,7 +20,7 @@
             transition: 0.3s;
         }
 
-        .active, .collapsible:hover {
+        .activeinternal, .collapsible:hover {
             background-color: #ccc;
         }
 
@@ -40,7 +40,7 @@
             margin-left: 10px;
         }
 
-        .active::after {
+        .activeinternal::after {
             content: "\2212"; /* Minus sign */
         }
     </style>
@@ -114,7 +114,7 @@
 
             button.addEventListener("click", function() {
                 // Toggle the active class to change arrow direction
-                this.classList.toggle("active");
+                this.classList.toggle("activeinternal");
                 var expanded = this.getAttribute("aria-expanded") === "true";
                 this.setAttribute("aria-expanded", !expanded);
                 if (content.style.display === "block") {
