@@ -46,8 +46,8 @@
     </style>
 </head>
 <body>
-    <button class="collapsible"><strong>About the Lab</strong></button>
-    <div class="content">
+    <button class="collapsible" aria-expanded="true" aria-controls="about-lab-content"><strong>About the Lab</strong></button>
+    <div class="content" id="about-lab-content">
         <hr />
         <p>The IST Open Source Software Lab was initiated as a start-up grant proposal by its founder – Dr. Mathias Fonkam – as part of his hiring package. It was funded by the then Dean of IST – Dr. Andrew Sears starting Fall 2023 for whom we owe much gratitude.</p>
         <p>Dr. Carl Cortner was the first faculty colleague to partner with Dr. Fonkam, not just to secure a physical location for the lab, but also to brainstorm on some of the focus areas of interest. Dr. Cortner was instrumental in securing a work area for the lab from then Acting Dean Tapia in the Summer of 2023. We are grateful for the support from Dean Tapia.</p>
@@ -55,15 +55,15 @@
         <p>Now, in 2024 we are also launching this website to be an additional source of collaboration and information for students interested in Open Source software.</p>
     </div>
 
-    <button class="collapsible"><strong>Vision & Mission</strong></button>
-    <div class="content">
+    <button class="collapsible" aria-expanded="true" aria-controls="Vision-and-Mission-Content"><strong>Vision & Mission</strong></button>
+    <div class="content" id="Vision-and-Mission-Content">
         <hr />
-        <p>Our vision is to position PSU as a world renown and global leader on Open-Source Software developments ensuring the sustainability & growth of the Open-Source Software community.</p>
+        <p>Our vision is to position PSU as a world renowned and global leader on Open-Source Software developments ensuring the sustainability & growth of the Open-Source Software community.</p>
         <p>Our mission is to get our students, faculty and community committed to adopting open-source software, building and disseminating critical capacity in open-source through trainings & research and forging greater collaborations with industry, government support agencies and other institutions.</p>
     </div>
 
-    <button class="collapsible"><strong>Goals & Objectives</strong></button>
-    <div class="content">
+    <button class="collapsible" aria-expanded="true" aria-controls="goals-content"><strong>Goals & Objectives</strong></button>
+    <div class="content" id="goals-content">
         <hr />
         <p>The Goals for the Open Source Software Lab can best be summarized as the following:</p>
         <ol>
@@ -75,8 +75,8 @@
         </ol>
     </div>
 
-    <button class="collapsible"><strong>Major Focus Areas</strong></button>
-    <div class="content">
+    <button class="collapsible" aria-expanded="true" aria-controls="focus-content"><strong>Major Focus Areas</strong></button>
+    <div class="content" id="focus-content">
         <hr />
         <p>We currently have the following areas of focus within the OSS Lab:</p>
         <ol>
@@ -92,8 +92,8 @@
         </ol>
     </div>
 
-    <button class="collapsible"><strong>Lab Work Groups</strong></button>
-    <div class="content">
+    <button class="collapsible" aria-expanded="true" aria-controls="workgroups-content"><strong>Lab Work Groups</strong></button>
+    <div class="content" id="workgroups-content">
         <hr />
         <p>The work Groups within the Open Source Software Lab are currently as follows:</p>
         <ol>
@@ -115,6 +115,8 @@
             button.addEventListener("click", function() {
                 // Toggle the active class to change arrow direction
                 this.classList.toggle("active");
+                var expanded = this.getAttribute("aria-expanded") === "true";
+                this.setAttribute("aria-expanded", !expanded);
                 if (content.style.display === "block") {
                     content.style.display = "none";
                 } else {
