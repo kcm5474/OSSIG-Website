@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Software Lab</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Make sure this links to your theme CSS -->
+    <style>
+        /* Style for collapsible section */
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+
+        /* Arrow icon style */
+        .collapsible::after {
+            content: '\002B'; /* Plus sign */
+            font-size: 20px;
+            color: #777;
+            float: right;
+            margin-left: 10px;
+        }
+
+        .active::after {
+            content: "\2212"; /* Minus sign */
+        }
+    </style>
+</head>
+<body>
+    <button class="collapsible">About the Lab</button>
+    <div class="content">
+        <hr />
+        <p>The IST Open Source Software Lab was initiated as a start-up grant proposal by its founder – Dr. Mathias Fonkam – as part of his hiring package. It was funded by the then Dean of IST – Dr. Andrew Sears starting Fall 2023 for whom we owe much gratitude.</p>
+        <p>Dr. Carl Cortner was the first faculty colleague to partner with Dr. Fonkam, not just to secure a physical location for the lab, but also to brainstorm on some of the focus areas of interest. Dr. Cortner was instrumental in securing a work area for the lab from then Acting Dean Tapia in the Summer of 2023. We are grateful for the support from Dean Tapia.</p>
+        <p>In the Fall of 2023, Mr. Jeff Schulman joined us as a faculty mentor for the lab. We officially started the lab activities Fall 2023 recruiting about 20 students, setting up a Canvas Site for the Lab, organizing about 4 meetings with the mentors and students that semester. The Canvas Site served as a platform for communications, collaborations and sharing of important open-source content with the group, especially the student interest group that we formed within the lab that semester.</p>
+        <p>Now, in 2024 we are also launching this website to be an additional source of collaboration and information for students interested in Open Source software.</p>
+    </div>
+
+    <button class="collapsible">Vision & Mission</button>
+    <div class="content">
+        <hr />
+        <p>Our vision is to position PSU as a world renown and global leader on Open-Source Software developments ensuring the sustainability & growth of the Open-Source Software community.</p>
+        <p>Our mission is to get our students, faculty and community committed to adopting open-source software, building and disseminating critical capacity in open-source through trainings & research and forging greater collaborations with industry, government support agencies and other institutions.</p>
+    </div>
+
+    <button class="collapsible">Goals & Objectives</button>
+    <div class="content">
+        <hr />
+        <p>The Goals for the Open Source Software Lab can best be summarized as the following:</p>
+        <ol>
+            <li>We are committed to Building a sustainable open Source community.</li>
+            <li>Supporting and promoting the use of Open-source systems in teaching, research and administrative functions across Penn State Departments.</li>
+            <li>Building in-house capacity on major open-source software systems such as Linux, NoSQL Databases, Machine Learning and Large Language Models.</li>
+            <li>Mentoring our students to build industry-level skills on major open-source software systems, to become active contributors to the maintenance of these systems.</li>
+            <li>To Contribute to the teaching and research of Open Source software systems.</li>
+        </ol>
+    </div>
+
+    <button class="collapsible">Major Focus Areas</button>
+    <div class="content">
+        <hr />
+        <ol>
+            <li>Linux</li>
+            <li>PostgreSQL</li>
+            <li>NoSQL DBs – MongoDB & Neo4J</li>
+            <li>Web-Development with JavaScript, Python, Ruby, and Haskell Web Frameworks</li>
+            <li>DevOps</li>
+            <li>LLM, ML, Data Science & System Dynamics Modeling with Vensim</li>
+            <li>Functional Programming with Haskell</li>
+            <li>Problem-Modeling and Analysis using Abstract Math, Neural Networks & System Dynamics</li>
+            <li>Crypto-Economics</li>
+        </ol>
+    </div>
+
+    <button class="collapsible">Lab Work Groups</button>
+    <div class="content">
+        <hr />
+        <p>The work Groups within the Open Source Software Lab are currently as follows:</p>
+        <ol>
+            <li>OSSIG – The Open-Source Software Interest Group composed of students</li>
+            <li>Lab Faculty mentors</li>
+            <li>Other Penn State Partners</li>
+        </ol>
+    </div>
+
+    <script>
+        // JavaScript to handle collapsible elements
+        var coll = document.querySelectorAll(".collapsible");
+
+        coll.forEach(function(button) {
+            // Set the content to be displayed by default
+            var content = button.nextElementSibling;
+            content.style.display = "block";
+
+            button.addEventListener("click", function() {
+                // Toggle the active class to change arrow direction
+                this.classList.toggle("active");
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
