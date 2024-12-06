@@ -1,0 +1,102 @@
+<p>Web development is one of the primary areas of Interest for the OSSIG. Dr. Mathias as well as our Developer, Kyle Marko, both take a large amount of interest in the feild of web development, and are great points of contact for tips and tricks regarding web development.</p>
+<h2>The Basics of Web Development</h2>
+<hr />
+<p>Web Development has been a thing since for over three decades. The Basics of Web Development began with and still are founded in HTML (Hypertext Markup Language), while not technically a programming language on its own due to a lack of functions that can be used to create novel functionality, HTML is still a great and easy way for new developers to get started with learning programming, as it still has important concepts to learning the foundations of programming such as Syntax rules, embedding, commenting, and attributes. On its own, HTML is used to display text in a way that is more easy to understand for humans. For example, in raw text, this Section may just look something like this, just being a basic blob of text:</p>
+<p><code>The Basics of Web Development
+
+Web Development has been a thing since for over three decades. The Basics of Web Development began with and still are founded in HTML (Hypertext Markup Language), while not technically a programming language on its own due to a lack of functions that can be used to create novel functionality, HTML is still a great and easy way for new developers to get started with learning programming, as it still has important concepts to learning the foundations of programming such as Syntax rules, embedding, commenting, and attributes. On its own, HTML is used to display text in a way that is more easy to understand for humans.</code></p>
+<p>However, with HTML Formatting, we can achieve some of the nice effects to format the text in an easier to read format, such as declaring the titles, Lines between elements, and different sized fonts for Titles and body text. For an example of this, lets go back to the example of the start of the section:</p>
+<blockquote>
+<table class="listing">
+<tbody>
+<tr>
+<td>
+<h2>The Basics of Web Development</h2>
+<hr />
+<p>Web Development has been a thing since for over three decades. The Basics of Web Development began with and still are founded in HTML (Hypertext Markup Language), while not technically a programming language on its own due to a lack of functions that can be used to create novel functionality, HTML is still a great and easy way for new developers to get started with learning programming, as it still has important concepts to learning the foundations of programming such as Syntax rules, embedding, commenting, and attributes. On its own, HTML is used to display text in a way that is more easy to understand for humans.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>With HTML formatting, we achieve a much nicer looking result as seen above once the computer renders the HTML into a human readable format. Prior to being rendered however, the HTML for that section would be as follows:</p>
+<table class="listing">
+<thead>
+<tr>
+<td> &lt;h2&gt;The Basics of Web Development&lt;/h2&gt;<br />&lt;hr /&gt;<br />&lt;p&gt;Web Development has been a thing since for over three decades. The Basics of Web Development began with and still are founded in HTML (Hypertext Markup Language), while not technically a programming language on its own due to a lack of functions that can be used to create novel functionality, HTML is still a great and easy way for new developers to get started with learning programming, as it still has important concepts to learning the foundations of programming such as Syntax rules, embedding, commenting, and attributes. On its own, HTML is used to display text in a way that is more easy to understand for humans. For example, in raw text, this Section may just look something like this, just being a basic blob of text:&lt;/p&gt;</td>
+</tr>
+</thead>
+</table>
+<p>As you can see, HTML at its core is a very basic markup language at its. All of the text features are stored in plain text, with the formatting "markup" being applied as simple elements over the text. For example, the title "The Basics of Web Development" is wrapped within "&lt;h2&gt;&lt;/h2&gt;". This signifies to the computer that this is a heading (heading type #2 specifically, which is the second largest heading that can be applied. Other features, such as &lt;p&gt;&lt;/p&gt; signify paragraphs as well. HTML has a variety of syntaxes beyond these two features as well, more than can be mentioned here, but <a href="https://www.w3schools.com/html/default.asp" data-linktype="external" data-val="https://www.w3schools.com/html/default.asp">W3 has a great tutorial on the various features of HTML.</a></p>
+<h2>CSS</h2>
+<hr />
+<p>CSS, or Cascading Style Sheets, are the second Key "language" to web development. Like HTML, CSS is not technically a programming language, as it lacks features such as functions and loops, however, nevertheless, it is still very important to web development as it applies additional styling and themes to HTML encoded content that HTML on its own does not include. Going back to our prior example, with CSS, we can add some fancy formatting to the section:</p>
+<table class="listing">
+<thead>
+<tr>
+<td>
+<div id="contenthtmx">
+<h2>The Basics of Web Development</h2>
+<hr />
+<p>Web Development has been a thing for over three decades. The Basics of Web Development began with and still are founded in HTML (Hypertext Markup Language). While not technically a programming language on its own due to a lack of functions that can be used to create novel functionality, HTML is still a great and easy way for new developers to get started with learning programming, as it still has important concepts for learning the foundations of programming such as Syntax rules, embedding, commenting, and attributes. On its own, HTML is used to display text in a way that is more easy to understand for humans.</p>
+</div>
+</td>
+</tr>
+</thead>
+</table>
+<p>The CSS allowing us to do so is as follows:</p>
+<table class="listing">
+<thead>
+<tr>
+<td>
+<p><code><body>
+    <pre>
+        <code>
+#contenthtmx {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#contenthtmx h2 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#contenthtmx hr {
+    border: 0;
+    height: 2px;
+    background-color: #3498db;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#contenthtmx p {
+    color: #34495e;
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+#contenthtmx .example-text {
+    font-style: italic;
+    color: #8e44ad;
+    background-color: #ecf0f1;
+    padding: 5px;
+    border-radius: 5px;
+}
+        </code>
+    </pre>
+</body>
+</code></p>
+</td>
+</tr>
+</thead>
+</table>
+<p>With This CSS, we are able to apply the formatting seen on the example text such as the new background color, Centered title, and fancy fonts. CSS has a wide variety of fuctions that can be applied to html to make web projects look beautiful. to learn more about CSS, we highly reccomend checking out The W3 tutorial on CSS: https://www.w3schools.com/w3css/defaulT.asp</p>
+<p><a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/?unit=us" data-label_1="State College" data-label_2="WEATHER">State College WEATHER</a></p>
+<hr />
