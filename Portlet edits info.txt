@@ -1,0 +1,25 @@
+#Just A basic text file of portlets I am deleting:
+
+
+These are contained at: https://ossig.ist.psu.edu/@@actions-controlpanel
+
+Accessibility:
+
+Path: Site actions > accessibility
+
+URL: python:f"{plone_portal_state.navigation_root_url()}/accessibility-info"
+
+New URL: python:f"https://www.psu.edu/accessibilitystatement"
+
+
+Contact:
+
+Path: Site actions > accessibility
+
+URL: python:f"{plone_portal_state.navigation_root_url()}/contact-info"
+
+New URL: python:f"{plone_portal_state.navigation_root_url()}/contact-us"
+contact-us
+
+I also removed registration from here for now.
+
